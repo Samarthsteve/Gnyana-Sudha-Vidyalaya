@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poopins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Hindi;
+  src: url(../fonts/NotoSerifDevanagari-Regular.ttf);
+}
+
+@font-face {
+  font-family: Kannada;
+  src: url(../fonts/NotoSerifKannada-Regular.ttf);
+}
+
+@font-face {
+  font-family: Noto-Display;
+  src: url(../fonts/NotoSerifDisplay-Regular.ttf);
+}
+
+html {
+  font-size: 16px;
+  font-family: Poopins, sans-serif;
+}
+
+body {
+  height: 200vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #f4d35e;
+}

@@ -1,0 +1,130 @@
+footer {
+  background-color: #6f1d1b;
+  width: 100vw;
+  padding: 16px 15px;
+  padding-bottom: 0;
+}
+
+footer .brand__name {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: white;
+}
+
+footer .brand__name .hin {
+  font-family: Hindi;
+}
+
+footer .brand__name .kan {
+  font-family: Kannada;
+}
+
+footer .brand__name .eng {
+  font-family: Noto-Display;
+  font-style: italic;
+  margin-right: 8px;
+}
+
+footer .brand__name span {
+  margin-right: 6px;
+}
+
+footer a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+footer .social__links {
+  margin: 20px 0;
+}
+
+footer .social__links a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .social__links a:active svg g[fill="#ffffff"] {
+  fill: #f4d35e;
+}
+
+footer .social__links a:first-child {
+  margin-left: 0;
+}
+
+footer .quick__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0;
+  width: 80%;
+  row-gap: 6px;
+}
+
+footer .quick__links a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .quick__links a:active {
+  color: #f4d35e;
+}
+
+footer .copyright__notice {
+  color: hsla(53, 4%, 59%, 0.8);
+  font-size: 0.8rem;
+  margin: 16px 0;
+}
+
+footer .copyright__notice a {
+  text-decoration: none;
+  color: hsla(53, 5%, 60%, 1);
+}
+
+footer .copyright__notice a:active {
+  color: #f4d35e;
+}
+
+footer .extra__links {
+  border-top: 1.4px solid hsla(53, 4%, 59%, 0.8);
+  margin: 20px 0;
+  padding: 20px 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+footer .extra__links p,
+footer .extra__links a {
+  font-size: 0.85rem;
+  color: hsla(53, 4%, 59%, 0.8);
+  text-decoration: none;
+  line-height: 1.4rem;
+  letter-spacing: 4px;
+}
+
+footer .extra__links a {
+  letter-spacing: 0.38px;
+}
+
+footer .extra__links a:active {
+  color: #f4d35e;
+}
+
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 20px;
+  }
+  footer .brand__name span {
+    margin-right: 10px;
+  }
+
+  footer .quick__links {
+    width: 50%;
+  }
+
+  footer .social__links svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  footer {
+    padding: 22px 21px;
+  }
+}
