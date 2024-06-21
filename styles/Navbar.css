@@ -9,8 +9,8 @@ nav {
   padding-right: 6px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
-  opacity: 0.17;
-  transition: width 0.55s, opacity 0.5s, padding-top 0.5s;
+  opacity: 0.3;
+  transition: width 0.55s, opacity 0.5s, padding-top 0.5s, left 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -111,6 +111,47 @@ nav:hover ul li {
   justify-content: flex-start;
 }
 
+.nav__toggle {
+  position: fixed;
+  top: 0px;
+  left: 74px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 50px;
+  transition: left 0.5s, opacity 0.5s;
+  border-radius: 14%;
+}
+
+.nav__toggle svg {
+  width: 18px;
+  margin: auto;
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+  opacity: 0.8;
+}
+
+.toggle__active {
+  left: 0;
+}
+
+.toggle__active svg {
+  transform: rotate(0deg);
+}
+
+.nav__active {
+  left: -74px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+
 @media screen and (min-width: 720px) {
   nav {
     width: 110px;
@@ -120,7 +161,7 @@ nav:hover ul li {
     left: 0;
     padding: 50px 15px;
     padding-right: 12px;
-    opacity: 0.28;
+    opacity: 0.32;
     justify-content: flex-start;
   }
 
@@ -160,5 +201,23 @@ nav:hover ul li {
 
   nav:hover ul li img {
     margin-right: 12px;
+  }
+
+  .nav__toggle {
+    left: 110px;
+    width: 40px;
+    height: 60px;
+  }
+
+  .nav__toggle svg {
+    width: 26px;
+  }
+
+  .nav__active {
+    left: -110px;
+  }
+
+  .toggle__active {
+    left:0;
   }
 }
