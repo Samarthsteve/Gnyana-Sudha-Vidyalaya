@@ -34,6 +34,7 @@ body {
   width: 50vw;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  background: black;
   
 }
 
@@ -55,16 +56,29 @@ body {
   height: 100%;
   object-fit: cover;
   pointer-events: none;
+  z-index: 2;
+  
+}
+
+#Hero {
+  position: relative;
+  
+}
+
+.hero__upper #hero__bg{
+  z-index: 0;
 }
 
 .hero__upper #hero__man {
 				transform-origin: bottom;
 }
 
-.hero__upper h2{
-position: relative;
+h2#hero__main-text{
+position: absolute;
 color: #fff;
 font-size: 12vw;
+  z-index: 1;
+  transform-origin: center center;
 }
 
 .hero__upper::before {
