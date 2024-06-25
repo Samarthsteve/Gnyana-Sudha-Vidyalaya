@@ -54,6 +54,17 @@ body {
   object-fit: cover;
   z-index: 2;
   pointer-events: none;
+  z-index: 2;
+  
+}
+
+#Hero {
+  position: relative;
+  
+}
+
+.hero__upper #hero__bg{
+  z-index: 0;
 }
 
 .hero__upper img#hero__bg {
